@@ -1,0 +1,141 @@
+New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="smoked chicken pizza,Chicken pizza fries,butter chicken pizza,cheese chicken pizza">
+    <meta name="keywords" content="cheese burger,chicken cheese burger,double cheese burger,beef cheese burger,cheese burger near me,full cheese burger,jalapeno cheese burger">
+    <title>ABOUT</title>
+    <style>
+        body, h1, h2, h3, p, img {
+          margin: 0;
+          padding: 0;
+        }
+        section {
+      background-color: #f9f9f9; /* Set background color for other sections */
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      top: 10vh;
+    }
+    .top-bar {
+      background-color:black;
+      color: white;
+      padding: 10px 20px;
+      height: 7vh;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      font-size: 24px;
+    }
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    .sidebar a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 14px;
+      left: 20px;
+      background-color:black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 2;
+    }
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+        </style>
+</head>
+<body>
+    <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="logo">DELICIOUS DELIGHTS</div>
+    <button class="toggle-btn" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <a href="Home.html">Home</a>
+    <a href="manu.html">Menu</a>
+    <a href="about.html" target="_blank">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+    <section id="about" style="background-color: #ffc107;">
+        <h2>About Us</h2>
+        <p style="width: 50%;">Our Journey 
+            Delicious Delights was founded in 2010 by M. Hassan, Umer Jameel and Zia-ud-din with a passion for creating delicious and authentic meals. We started with a small pizzeria in WahCantt and quickly gained a loyal following for our fresh ingredients, handmade dough, and unique flavor combinations.
+            
+            Over the years, we've expanded to 3 locations across Rawalpindi, but our commitment to quality and customer satisfaction remains the same We use only the freshest ingredients, source locally whenever possible, and take pride in our traditional techniques.</p>
+            <p style="width: 50%;">Our Mission
+
+                Our mission is to provide our customers with the best meals experience possible. We believe that food is more than just a meal, it's a way to bring people together and create lasting memories We strive to create a welcoming and friendly atmosphere where everyone feels at home.
+                
+                Use high-quality, fresh ingredients
+                
+                Offer a variety of meals to satisfy all tastes.
+                
+                Provide excellent customer service
+                
+                Create a warm and inviting dining experience</p>
+      </section>
+
+
+      <footer>
+        <p>&copy; 2024 Delicious Delights. All rights reserved.</p>
+      </footer>
+      
+
+      <script>
+        function openNav() {
+          document.getElementById("sidebar").style.width = "250px";
+        }
+    
+        function closeNav() {
+          document.getElementById("sidebar").style.width = "0";
+        }
+      </script>
+</body>
+</html>

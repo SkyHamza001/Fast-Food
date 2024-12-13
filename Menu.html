@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description"
+    content="A fast-food restaurant is a quick-service establishment that offers affordable, convenient meals to customers on the go. Known for their standardized menus and efficient service, fast-food spots serve popular items like burgers, fries, pizzas, and sandwiches, often complemented by soft drinks and shakes. These restaurants prioritize speed and accessibility, usually featuring drive-thru lanes and streamlined ordering systems. With a focus on consistency, customers can expect familiar tastes and experiences across different locations of the same chain. While fast food is often associated with indulgent treats, many chains now include healthier options like salads, wraps, and grilled items to cater to a wider range of preferences. ">
+
+  <meta name="keywords" content="burger near me,zinger burger near me,zinger burger,chicken zinger burger,halal zinger burger near me,best zinger burger near me,double patty burger,chicken patty burger,patty burger,pizza near me,chicken pizza,pizza online,loaded fries,pasta near me,best loaded fries ">
+  
+  <title>Delicious Delights</title>
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    img {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style the top bar */
+    .top-bar {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      height: 7vh;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Style the logo */
+    .logo {
+      font-size: 24px;
+    }
+
+    /* Style the sidebar */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    /* Style sidebar links */
+    .sidebar a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* Style links on hover */
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Style the main sections */
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background-color: #f9f9f9;
+      /* Set background color for other sections */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Style the menu items */
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .menu-item {
+      flex: 0 0 calc(20% - 20px);
+      /* 20% width with 20px margin */
+      margin: 10px;
+      text-align: center;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Style the footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Style the close button */
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style the toggle button */
+    .toggle-btn {
+      position: fixed;
+      top: 14px;
+      left: 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="logo">DELICIOUS DELIGHTS</div>
+    <button class="toggle-btn" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <a href="Home.html">Home</a>
+    <a href="manu.html">Menu</a>
+    <a href="about.html" target="_blank">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <header>
+    <div class="banner">
+      <h1>Welcome to Delicious Delights</h1>
+      <p>Explore our mouthwatering dishes</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2 style="display: grid; justify-content: center;">Our Menu</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <a href="order.html">
+            <img src="G.jpg" alt="chicken pasta">
+          </a>
+          <h3>Grilled chicken pasta</h3>
+          <h3>1000RS</h3>
+          <p>Grilled chicken in creamy pasta</p>
+        </div>
+        <div class="menu-item">
+          <img src="ZB.jpg" alt="crispy patty burger">
+          <h3>Zinger Burger</h3>
+          <h3>350RS</h3>
+          <p>Description of Zinger Burger</p>
+        </div>
+        <div class="menu-item">
+          <img src="Loaded Fries.jpg" alt="best loaded fries near me">
+          <h3>Loaded Fries</h3>
+          <h3>250RS</h3>
+          <p>Description of Loaded Fries</p>
+        </div>
+        <div class="menu-item">
+          <img src="CC.jpg" alt="tandoori chicken pizza">
+          <h3>Crown-Crust</h3>
+          <h3>1600RS</h3>
+          <p>Description of Crown-Crust </p>
+        </div>
+        <div class="menu-item">
+          <img src="BBQ Pizza.jpg" alt="smoky bbq pizza">
+          <h3>BBQ Pizza</h3>
+          <p>Description of BBQ Pizza</p>
+        </div>
+        <div class="menu-item">
+          <img src="Double Zinger Burger.jpg" alt="grilled cheese burger">
+          <h3>Double Zinger Burger</h3>
+          <h3>350RS</h3>
+          <p>Description of Double Zinger Burger</p>
+        </div>
+        <div class="menu-item">
+          <img src="Beef-Burger.jpg" alt="beef burger near me">
+          <h3>Beef Burger</h3>
+          <h3>350RS</h3>
+          <p>Description of Beef Burger</p>
+        </div>
+        <div class="menu-item">
+          <img src="Grilled Burger.jpg" alt="grilled chicken cheese burger">
+          <h3>Grilled Burger</h3>
+          <h3>350RS</h3>
+          <p>Description of Grilled Burger</p>
+        </div>
+        <div class="menu-item">
+          <img src="Cheese Burger.jpg" alt="double decker cheese burger">
+          <h3>Cheese Burger</h3>
+          <h3>350RS</h3>
+          <p>Description of Cheese Burger</p>
+        </div>
+        <div class="menu-item">
+          <img src="Smoky BBQ Pizza.jpg"peri peri chicken pizza">
+          <h3>Smoky BBQ Pizza</h3>
+          <h3>350RS</h3>
+          <p>Description of Smoky BBQ Pizza</p>
+        </div>
+        <!-- Add more menu items as needed -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Delicious Delights. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

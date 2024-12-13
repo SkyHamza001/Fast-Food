@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="creamy grilled chicken pasta,grilled chicken pasta alfredo,chicken pasta,types of pasta,cheese pasta">
+    <meta name="keywords" content="chicken bbq pizza,texan bbq pizza,bbq pizza fries,italian bbq pizza,spicy bbq pizza,chicken loaded fries,grilled chicken pasta">
+    <title>CONTACT</title>
+    <style>
+        body, h1, h2, h3, p, img {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style the top bar */
+    .top-bar {
+      background-color:black;
+      color: white;
+      padding: 10px 20px;
+      height: 7vh;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Style the logo */
+    .logo {
+      font-size: 24px;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    /* Style sidebar links */
+    .sidebar a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* Style links on hover */
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    section {
+      background-color: #f9f9f9; /* Set background color for other sections */
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      top: 10vh;
+      width: 100%;
+    }
+
+    /* Style the footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Style the close button */
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style the toggle button */
+    .toggle-btn {
+      position: fixed;
+      top: 14px;
+      left: 20px;
+      background-color:black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 2;
+    }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">DELICIOUS DELIGHTS</div>
+        <button class="toggle-btn" onclick="openNav()">&#9776;</button>
+      </div>
+    
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="Home.html">Home</a>
+        <a href="manu.html">Menu</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    <section id="contact" style="background-color: #03a9f4;"> <!-- Set background color for Contact section -->
+        <h2>Contact Us</h2>
+        <p>Email: info@deliciousdelights.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Follow us on:</p>
+        <a href="#">WhatsApp</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2024 Delicious Delights. All rights reserved.</p>
+    </footer>
+  
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.width = "250px";
+      }
+  
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
+</body>
+</html>
