@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <meta name="Description" content="fast food near me, nearest fast food,fast food restaurants,nearest fast food restaurant near me  ">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find delicious fast food near you, including burgers, pasta, and pizza. Explore our menu for mouthwatering delights.">
   <title>Delicious Delights</title>
-
   <style>
     body, h1, h2, h3, p, img {
       margin: 0;
@@ -15,7 +13,7 @@
 
     /* Style the top bar */
     .top-bar {
-      background-color:black;
+      background-color: black;
       color: white;
       padding: 10px 20px;
       height: 7vh;
@@ -24,6 +22,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 3;
     }
 
     /* Style the logo */
@@ -33,7 +32,7 @@
 
     /* Style the header */
     header {
-      height: 100vh; /* Change height to 90vh */
+      height: 90vh;
       background-image: url('Banner.jpg');
       background-size: cover;
       background-position: center;
@@ -49,16 +48,15 @@
       height: 100%;
       width: 0;
       position: fixed;
-      z-index: 1;
+      z-index: 2;
       top: 0;
       left: 0;
-      background-color:black;
+      background-color: black;
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
     }
 
-    /* Style sidebar links */
     .sidebar a {
       padding: 10px;
       text-decoration: none;
@@ -68,24 +66,42 @@
       transition: 0.3s;
     }
 
-    /* Style links on hover */
     .sidebar a:hover {
       color: #f1f1f1;
     }
 
-    /* Style the main sections */
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 14px;
+      left: 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 3;
+      margin-top: 5px;
+    }
+
     main {
       padding: 20px;
     }
 
     section {
       margin-bottom: 40px;
-      background-color: #f9f9f9; /* Set background color for other sections */
+      background-color: #f9f9f9;
       padding: 20px;
       border-radius: 10px;
     }
 
-    /* Style the menu items */
     .menu-items {
       display: flex;
       flex-wrap: wrap;
@@ -93,7 +109,7 @@
     }
 
     .menu-item {
-      flex: 0 0 calc(20% - 20px); /* 20% width with 20px margin */
+      flex: 0 0 calc(20% - 20px);
       margin: 10px;
       text-align: center;
     }
@@ -104,34 +120,12 @@
       border-radius: 10px;
     }
 
-    /* Style the footer */
     footer {
       text-align: center;
       padding: 20px;
       background-color: #333;
       color: white;
-    }
-
-    /* Style the close button */
-    .close-btn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    /* Style the toggle button */
-    .toggle-btn {
-      position: fixed;
-      top: 14px;
-      left: 20px;
-      background-color:black;
-      color: white;
-      border: none;
-      cursor: pointer;
-      padding: 10px 15px;
-      z-index: 2;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -152,56 +146,57 @@
     <a href="contact.html">Contact</a>
   </div>
 
+  <!-- Header Section -->
   <header>
     <div class="banner">
-      <h1 " fast food restaurant near me ">Welcome to Delicious Delights</h1>
+      <h1 id="fast-food-restaurant-near-me">Welcome to Delicious Delights</h1>
       <p>Explore our mouthwatering dishes</p>
     </div>
   </header>
 
+  <!-- Main Content -->
   <main>
     <section id="menu">
       <h2 style="display: grid; justify-content: center;">Our Menu</h2>
       <div class="menu-items">
         <div class="menu-item">
           <a href="order.html">
-            <img src="G.jpg" alt="pasta">
+            <img src="G.jpg" alt="Grilled chicken pasta">
           </a>
-          <h3>Grilled chicken pasta</h3>
+          <h3>Grilled Chicken Pasta</h3>
           <h3>1000RS</h3>
           <p>Grilled chicken in creamy pasta</p>
         </div>
         <div class="menu-item">
-          <img src="ZB.jpg" alt="zinger cheese burger">
+          <img src="ZB.jpg" alt="Zinger cheese burger">
           <h3>Zinger Burger</h3>
           <h3>350RS</h3>
-          <p>Description of Dish 2</p>
+          <p>Crispy zinger with cheese</p>
         </div>
         <div class="menu-item">
-          <img src="hd.jpg" alt="beef burger">
-          <h3>Hot-Dog</h3>
+          <img src="hd.jpg" alt="Hot Dog">
+          <h3>Hot Dog</h3>
           <h3>250RS</h3>
-          <p>Description of Dish 3</p>
+          <p>Delicious beef hot dog</p>
         </div>
         <div class="menu-item">
-          <img src="CC.jpg" alt="bbq chicken pizza">
-          <h3>Crown-Crust(M)</h3>
+          <img src="CC.jpg" alt="BBQ chicken pizza">
+          <h3>Crown-Crust Pizza (M)</h3>
           <h3>1600RS</h3>
-          <p>Description of Dish 4</p>
+          <p>Cheesy crown-crust pizza</p>
         </div>
         <div class="menu-item">
           <a href="Menu.html">
-          <img src="next.jpg" alt="loaded fries" style="height: 156.8px;  width: 148ox;">
-        </a>
+            <img src="next.jpg" alt="More items" style="height: 156.8px; width: 148px;">
+          </a>
           <h3>MORE</h3>
-          <p>There are more and dlices items on main page</p>
+          <p>Discover more delicious items on the main page</p>
         </div>
-        <!-- Add more menu items as needed -->
       </div>
     </section>
-
   </main>
 
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 Delicious Delights. All rights reserved.</p>
   </footer>
@@ -215,5 +210,6 @@
       document.getElementById("sidebar").style.width = "0";
     }
   </script>
+
 </body>
 </html>
